@@ -1,0 +1,18 @@
+[project]
+name = "cogvideo-demo"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.11"
+dependencies = [
+    "httpx>=0.28.1",
+    "imageio-ffmpeg>=0.6.0",
+    "sniffio>=1.3.1",
+    "zhipuai>=2.1.5.20250825",
+]
+
+[project.scripts]
+cogvideo-demo = "cogvideo_demo:main"
+
+[build-system]
+requires = ["uv_build>=0.12.15,<0.13.0"]
+build-backend = "uv_build"
